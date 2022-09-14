@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css"
+const Banner = () => {
+  return (
+    <div className="Banner">
+      <h1>Banner</h1>
+    </div>
+  )
+}
+const Products = () => {
+  function Item({name, price}) {
+    return (
+    <div className="Item">
+      <h1>{name}</h1>
+      <h3>{price}</h3>
+    </div>
+    )
+  }
+  return (
+    <div className="Products">
+      <h1>Products</h1>
+      <div className="Products-all">
+        <Item name='Apranq1' price={12000}/>
+        <Item name='Apranq2' price={12050}/>
+        <Item name='Apranq3' price={12000}/>
+        <Item name='Apranq4' price={12000}/>
+      </div>
+    </div>
+  )
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Products />
     </div>
-  );
+  )
 }
 
 export default App;
