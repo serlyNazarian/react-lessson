@@ -1,0 +1,21 @@
+.ToDo {
+  border: 1px solid black;
+}
+
+.modal-delete {
+  width: 250px;
+  height: 120px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal-delete button {
+  width: 100px;
+  height: 40px;
+}
