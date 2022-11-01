@@ -1,5 +1,8 @@
 .ToDo {
   border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .modal-delete {
@@ -18,4 +21,30 @@
 .modal-delete button {
   width: 100px;
   height: 40px;
+}
+
+.add {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 20vh;
+}
+
+.Main-Input {
+  width: 20%;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.add-btn {
+  height: 65px;
+  width: 5%;
+}
+
+.add-btn:hover {
+  cursor: pointer;
 }

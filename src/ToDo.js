@@ -54,8 +54,8 @@ const ToDo = () => {
   return (
     <div className="ToDos">
       <div className="add">
-        <input type="text" id={"title"} onChange={changed} />
-        <button onClick={add}>Add</button>
+        <input className="Main-Input" type="text" id={"title"} onChange={changed} />
+        <button className="add-btn" onClick={add}>Add</button>
       </div>
       {toDos.map((item) => (
         <div
